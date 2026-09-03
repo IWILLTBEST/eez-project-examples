@@ -112,107 +112,147 @@
       "left": 0,
       "top": 0,
       "width": 480,
-      "height": 320,
+      "height": 272,
       "components": [
         {
           "type": "LVGLScreenWidget",
           "children": [
             {
-              "type": "LVGLLabelWidget",
+              "type": "LVGLMessageBoxWidget",
               "left": 16,
-              "top": 8,
+              "top": 16,
               "width": 448,
-              "height": 18,
-              "text": "MessageBox widget examples",
-              "textType": "literal"
-            },
-            {
-              "type": "LVGLMessageBoxWidget",
-              "left": 16,
-              "top": 32,
-              "width": 219,
-              "height": 150,
-              "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-              "identifier": "dlg_save",
-              "title": "Save changes",
-              "titleType": "literal",
-              "text": "Save changes before exiting?",
-              "textType": "literal",
-              "buttons": [
-                {
-                  "text": "Save",
-                  "closeButton": false
-                },
-                {
-                  "text": "Discard",
-                  "closeButton": false
-                },
-                {
-                  "closeButton": true
-                }
-              ],
-              "localStyles": {
-                "definition": {
-                  "MAIN": {
-                    "DEFAULT": {
-                      "align": "DEFAULT"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "type": "LVGLMessageBoxWidget",
-              "left": 245,
-              "top": 32,
-              "width": 219,
-              "height": 150,
-              "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
-              "identifier": "dlg_info",
-              "title": "Update",
-              "titleType": "literal",
-              "text": "New version available.",
-              "textType": "literal",
-              "buttons": [
-                {
-                  "text": "OK",
-                  "closeButton": false
-                }
-              ],
-              "localStyles": {
-                "definition": {
-                  "MAIN": {
-                    "DEFAULT": {
-                      "align": "DEFAULT"
-                    }
-                  }
-                }
-              }
-            },
-            {
-              "type": "LVGLMessageBoxWidget",
-              "left": 16,
-              "top": 194,
-              "width": 448,
-              "height": 114,
+              "height": 120,
               "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
               "identifier": "dlg_replace",
               "title": "Replace file",
               "titleType": "literal",
               "text": "File already exists. What do you want to do?",
               "textType": "literal",
-              "buttons": [
+              "children": [
                 {
-                  "text": "Keep both",
-                  "closeButton": false
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": false,
+                  "identifier": "btn_keep_both",
+                  "text": "Keep both"
                 },
                 {
-                  "text": "Replace",
-                  "closeButton": false
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": false,
+                  "identifier": "btn_replace",
+                  "text": "Replace"
                 },
                 {
-                  "text": "Cancel",
-                  "closeButton": false
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": false,
+                  "identifier": "btn_cancel",
+                  "text": "Cancel"
+                }
+              ],
+              "localStyles": {
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "align": "DEFAULT"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "LVGLMessageBoxWidget",
+              "left": 16,
+              "top": 148,
+              "width": 240,
+              "height": 108,
+              "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "identifier": "dlg_save",
+              "title": "Save changes",
+              "titleType": "literal",
+              "text": "Save changes before exiting?",
+              "textType": "literal",
+              "children": [
+                {
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": false,
+                  "identifier": "btn_save",
+                  "text": "Save"
+                },
+                {
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": false,
+                  "identifier": "btn_discard",
+                  "text": "Discard"
+                }
+              ],
+              "localStyles": {
+                "definition": {
+                  "MAIN": {
+                    "DEFAULT": {
+                      "align": "DEFAULT"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "type": "LVGLMessageBoxWidget",
+              "left": 280,
+              "top": 148,
+              "width": 184,
+              "height": 108,
+              "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLLABLE|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_WITH_ARROW|SNAPPABLE",
+              "identifier": "dlg_info",
+              "title": "Update",
+              "titleType": "literal",
+              "text": "New version available.",
+              "textType": "literal",
+              "children": [
+                {
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": false,
+                  "identifier": "btn_ok",
+                  "text": "OK"
+                },
+                {
+                  "type": "LVGLMessageBoxButtonWidget",
+                  "left": 0,
+                  "top": 0,
+                  "width": 80,
+                  "height": 40,
+                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
+                  "closeButton": true,
+                  "identifier": "btn_close"
                 }
               ],
               "localStyles": {
@@ -225,7 +265,9 @@
                 }
               }
             }
-          ]
+          ],
+          "width": 480,
+          "height": 272
         }
       ]
     }
