@@ -138,36 +138,16 @@
               "titleType": "literal",
               "text": "Save changes before exiting?",
               "textType": "literal",
-              "children": [
+              "buttons": [
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "closeButton": false,
                   "text": "Save",
-                  "identifier": "btn_save"
+                  "closeButton": false
                 },
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "closeButton": false,
                   "text": "Discard",
-                  "identifier": "btn_discard"
+                  "closeButton": false
                 },
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
                   "closeButton": true
                 }
               ],
@@ -193,17 +173,10 @@
               "titleType": "literal",
               "text": "New version available.",
               "textType": "literal",
-              "children": [
+              "buttons": [
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "closeButton": false,
                   "text": "OK",
-                  "identifier": "btn_ok"
+                  "closeButton": false
                 }
               ],
               "localStyles": {
@@ -228,39 +201,18 @@
               "titleType": "literal",
               "text": "File already exists. What do you want to do?",
               "textType": "literal",
-              "children": [
+              "buttons": [
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "closeButton": false,
                   "text": "Keep both",
-                  "identifier": "btn_keep"
+                  "closeButton": false
                 },
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "closeButton": false,
                   "text": "Replace",
-                  "identifier": "btn_replace"
+                  "closeButton": false
                 },
                 {
-                  "type": "LVGLMessageBoxButtonWidget",
-                  "left": 0,
-                  "top": 0,
-                  "width": 80,
-                  "height": 40,
-                  "widgetFlags": "CLICKABLE|CLICK_FOCUSABLE|GESTURE_BUBBLE|PRESS_LOCK|SCROLL_CHAIN_HOR|SCROLL_CHAIN_VER|SCROLL_ELASTIC|SCROLL_MOMENTUM|SCROLL_ON_FOCUS|SCROLL_WITH_ARROW|SNAPPABLE",
-                  "closeButton": false,
                   "text": "Cancel",
-                  "identifier": "btn_cancel"
+                  "closeButton": false
                 }
               ],
               "localStyles": {
